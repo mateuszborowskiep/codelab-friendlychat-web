@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), importProvidersFrom(provideFirebaseApp(() => initializeApp({"projectId":"shieldmaestro","appId":"1:281861178512:web:b8ad33d06dfbf929788415","storageBucket":"shieldmaestro.firebasestorage.app","locationId":"europe-central2","apiKey":"AIzaSyBTYorc22_eFhMMKFwlv5Fx_paD-7rJun0","authDomain":"shieldmaestro.firebaseapp.com","messagingSenderId":"281861178512","measurementId":"G-244529JH6W"}))), importProvidersFrom(provideAuth(() => getAuth())), importProvidersFrom(provideFirestore(() => getFirestore())), importProvidersFrom(provideMessaging(() => getMessaging())), importProvidersFrom(provideStorage(() => getStorage()))
   ],
 };
