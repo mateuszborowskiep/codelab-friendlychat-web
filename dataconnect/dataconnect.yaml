@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "codelab-friendlychat-web"
+location: "europe-central2"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "codelab-friendlychat-web-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
